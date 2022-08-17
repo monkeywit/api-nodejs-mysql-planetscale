@@ -1,0 +1,28 @@
+GET http://localhost:3000/api/country HTTP/1.1
+
+###
+GET http://localhost:3000/api/country/1 HTTP/1.1
+
+
+###
+POST http://localhost:3000/api/country HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Mexico",
+  "capital": "C. de Mexico",
+  "currency": "MXN"
+}
+
+###
+PUT http://localhost:3000/api/country/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Colombia",
+  "capital": "Bogota",
+  "currency": "COP"
+}
+
+###
+DELETE http://localhost:3000/api/country/2 HTTP/1.1
